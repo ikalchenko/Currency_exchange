@@ -9,7 +9,7 @@ class Converter {
     static getSymbols() {
         let xhr = new XMLHttpRequest();
         let symbols = {};
-        xhr.open('POST', 'http://www.apilayer.net/api/list?access_key=' + API_KEY, false);
+        xhr.open('POST', 'https://www.apilayer.net/api/list?access_key=' + API_KEY, false);
         xhr.send();
         let JSONResponse = JSON.parse(xhr.responseText);
         if (JSONResponse['success'] === true) {
@@ -31,7 +31,7 @@ class Converter {
     static getCurrencies() {
         let xhr = new XMLHttpRequest();
         let currencies = {};
-        xhr.open('POST', 'http://www.apilayer.net/api/live?access_key=' + API_KEY, false);
+        xhr.open('POST', 'https://www.apilayer.net/api/live?access_key=' + API_KEY, false);
         xhr.send(); 
         let JSONResponse = JSON.parse(xhr.responseText);
         if (JSONResponse['success'] === true) {
