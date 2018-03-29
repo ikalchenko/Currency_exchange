@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script src="js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="grey lighten-3">
+<nav>
+    <div class="nav-wrapper blue-grey">
+        <a href="#" class="brand-logo center">Awesome currency converter</a>
+    </div>
+</nav>
+<div class="card grey lighten-5">
+    <div class="row">
+        <div class="col s1"></div>
+        <div class="input-field col s3">
+            <input id="convertFrom"  type="number">
+            <label for="convertFrom">Quantity</label>
+        </div>
+        <div class="input-field col s3">
+            <input type="text" id="autocomplete_from" class="autocomplete">
+            <label for="autocomplete-input">Currency to convert from</label>
+        </div>
+        <a class="waves-effect waves-ripple btn-flat col s1 center-align to-the-bottom"><i class="large material-icons">compare_arrows</i></a>
+        <div class="input-field col s3">
+            <input type="text" id="autocomplete_into" class="autocomplete">
+            <label for="autocomplete-input">Currency to convert into</label>
+        </div>
+        <div class="col s1"></div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

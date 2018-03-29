@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    font-size: 1.2em;
+    display: block;
+    line-height: 2em;
+    margin-bottom: 5vh;
+    background-color: #ccc;
+}
+
+.to-the-bottom {
+    margin-top: 2%;
+}
+
