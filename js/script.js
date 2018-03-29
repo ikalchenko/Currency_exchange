@@ -1,4 +1,4 @@
-const API_KEY = '24e5c179338dd7c0e8f35fe4fc5f0298';
+const API_KEY = 'my_key';
 
 class Converter {
     constructor() {
