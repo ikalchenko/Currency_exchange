@@ -17,23 +17,38 @@
         <a href="#" class="brand-logo center">Awesome currency converter</a>
     </div>
 </nav>
-<div class="card grey lighten-5">
+<div class="card grey lighten-5 wrapper">
     <div class="row">
         <div class="col s1"></div>
         <div class="input-field col s3">
-            <input id="convertFrom"  type="number">
-            <label for="convertFrom">Quantity</label>
+            <input id="quantity" type="number" class="">
+            <label for="quantity">Quantity</label>
+            <span class="helper-text"></span>
         </div>
         <div class="input-field col s3">
             <input type="text" id="autocomplete_from" class="autocomplete">
             <label for="autocomplete-input">Currency to convert from</label>
+            <span class="helper-text"></span>
         </div>
         <a id="switch_currencies" class="waves-effect waves-ripple btn-flat col s1 center-align to-the-bottom"><i class="large material-icons">compare_arrows</i></a>
         <div class="input-field col s3">
             <input type="text" id="autocomplete_into" class="autocomplete">
             <label for="autocomplete-input">Currency to convert into</label>
+            <span class="helper-text"></span>
         </div>
         <div class="col s1"></div>
+    </div>
+    <div class="row">
+        <div class="col s10"></div>
+        <div class="col s2"><a id="convert" class="waves-effect waves-light btn-large">convert</a></div>
+        
+    </div>
+</div>
+<div id="resultCard" class="card grey lighten-5 wrapper hide">
+    <div class="row">
+        <div class="col s12">
+            <div id="result" class="center-align"></div>
+        </div>
     </div>
 </div>
 <script src="js/script.js"></script>
